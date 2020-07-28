@@ -1,0 +1,20 @@
+#switch{
+  margin-left: 29%;
+}
+
+.container{
+  width: 505px;
+}
+
+#doubleAuhtentication{
+  margin-left: 29%;
+  width: 325px;
+}
+
+#configPassword{
+  width: 325px;
+}
+
+.container-fluid{
+  text-align: center;
+}

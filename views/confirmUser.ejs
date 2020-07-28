@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/styles/style.css" type="text/css">
+  <title>SeguriD(oor)ad</title>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <img src="./assets/images/logo.png">
+    <p>¡Último paso!</p>
+    <br>
+    <br>
+  </div>
+
+
+  <div class="container">
+    <p>¿Cómo quieres verificar tu identidad?</p>
+    <br>
+    <!--formulario-->
+      <!--<form class="needs-validation" id="form">-->  <!--formulario a revisar-->
+      <div class="" novalidate>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="smsRadio" value="smsOption" name="tipo">
+          <label class="form-check-label" for="smsRadio">
+            Código SMS.
+          </label>
+        </div>
+        <button type="button" id="sendConfirmationCode" class="btn btn-primary">Enviar</button>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="emailRadio" value="emailOption" name="tipo">
+          <label class="form-check-label" for="emailRadio">
+            Código email.
+          </label>
+        </div>
+
+      <br>
+      <br>
+
+      <div class="container">
+      <form class="needs-validation" id="form">
+        <div novalidate>
+        <div class="form-group" >
+            <label for="ultimateCodeV">Código de verificación.</label>
+            <input type="number" id="ultimateCodeV" placeholder="xxx - xxx - xxx" class="form-control" required>
+            <div class="valid-feedback">
+              ¡Correcto!
+            </div>
+            <div class="invalid-feedback">
+              Favor de rellenar los campos.
+            </div>
+          </div>
+        </div>
+          </form> <!--formulario a revisar-->
+      </div>
+      <br>
+      <div class="container-md" id="toMarginBottom">
+        <div class="row">
+          <div class="col">
+            <button type="button" id="cancelVerificationButton" class="btn btn-danger">Cancelar</button>
+            <button type="button" id="verificationButton" class="btn btn-success">Verificar</button>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+  <!--  </form>-->
+  <!--formulario-->
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</body>
+<script src="./assets/scripts/confirmUser.js" type="module"></script>
+
+</html>

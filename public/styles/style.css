@@ -1,0 +1,74 @@
+.container-fluid {
+  text-align: center;
+}
+
+.form-group{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#firstName{
+  width: 200px;
+}
+
+#lastName{
+  width: 200px;
+  margin-left:5px;
+}
+
+.container{
+  width: 405px;
+}
+
+#register{
+  margin-left: 190px;
+}
+
+#serialNumberInput {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#cancelButton {
+  border-radius: 15%;
+}
+
+#continueButton {
+  margin-left: 209px;
+  border-radius: 15%;
+}
+
+#ultimateCodeV{
+  width: 405px;
+}
+
+.container-md{
+  width: 405px;
+  text-align: center;
+}
+
+#verificationButton{
+  margin-left: 100px;
+}
+
+#sendConfirmationCode{
+  margin-left: 327px;
+}
+
+.identityVerification {
+  text-align: center;
+}
+
+#formCheck {
+  margin-left: 58px;
+}
+
+#labelFormCheck {
+  margin-left: 78px;
+  width: 300px;
+}
+
+#toMarginBottom{
+  margin-bottom: 100px;
+}

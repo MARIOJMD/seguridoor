@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/styles/style.css" type="text/css">
+  <title>SeguriD(oor)ad</title>
+</head>
+
+<body>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md">
+        <div>
+          <img src="./assets/images/logo.png">
+          <p>¡Ya casi!</p>
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <form id="form" class="needs-validation" method="POST" action="./confirmUser">
+          <div class="" novalidate>
+            <label for="firstName">Nombre(s):</label>
+            <div class="row">
+              <div class="form-group">
+                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Nombre(s)" required>
+              </div>
+
+              <div class="form-group" novalidate>
+                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Apellidos" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">+52</span>
+                </div>
+                <input type="number" id="phoneNumber" name="phoneNumber" class="form-control" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Correo electrónico:</label>
+              <input type="text" class="form-control" id="email" name="email" placeholder="example@service.com" required>
+            </div>
+            <div class="form-group">
+              <label for="birthDay">Fecha de nacimiento:</label>
+              <input type="date" class="form-control" id="birthDay" name="birthDay" required>
+
+            </div>
+            <div class="form-group">
+              <label for="password">Contraseña:</label>
+              <input type="password" class="form-control" placeholder="*****" id="password" name="password" required>
+
+            </div>
+
+            <div class="form-group">
+              <label for="confirmPassword" class="labelAlign">Confirme su contraseña:</label>
+              <input type="password" class="form-control" placeholder="*****" id="confirmPassword" name="confirmPassword" required>
+              <div class="invalid-feedback">
+                Favor de rellenar los campos faltantes.
+              </div>
+              <div class="valid-feedback">
+                ¡Correcto!
+              </div>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="formCheck" required>
+              <label class="form-check-label" for="formCheck" id="labelFormCheck">
+                Acepto términos y condiciones.
+              </label>
+            </div>
+          </div>
+      </div><!--Validacion de Formulario-->
+    </div>
+  </div>
+  </div>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="row">
+          <button type="button" class="btn btn-danger" id="cancelRegister">Cancelar</button>
+          <input type="submit" class="btn btn-success" id="register" name="register" value="Registrarme"></input>
+        </div>
+      </div>
+    </div>
+  </div>
+  </form>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</body>
+<script type="module" src="./assets/scripts/formSignUp.js"></script>
+
+</html>

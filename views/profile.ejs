@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html > 
+  <head>
+    <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/styles/profile.css" type="text/css">
+  <title>SeguriD(oor)ad</title>
+  </head>
+<body>
+  <br>
+  <br>
+  <br>
+
+    <div class="container-fluid">
+      <div class"row">
+        <div class="col-sm">
+          <div class="row">
+          <div class="row">
+          <img src="./assets/images/hombreChido.svg" id="hombre">
+          
+          <p id="white">Usuario</p>
+         
+         
+          </div>
+          <img src="./assets/images/logo.png" id="logo">
+          <a href="./settings"><img src="./assets/images/engraneGris.svg" id="engrane"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <!--<img src="./assets/images/hombre.png" id="hombre">-->
+     <!-- <img src="./assets/images/logo.png" id="logo">-->
+      <!--<img src="./assets/images/engrane.png" id="engrane">-->
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+      <table class="table ">
+        <thead class="thead-dark">
+        <tr>
+          <th>Usuario</th>
+          <th>fecha</th>
+        </tr>
+        <%data.forEach((index) =>{%>
+          <tr>
+            <td><%=index.firstName%></td>
+            <td><%=index.birthDay%></td>
+          </tr>
+          <% });%>
+      </table>
+          </div>
+        </div>
+    </div>
+
+  <br>
+
+    <div class="container">
+    <div class="row">
+      <div class="col-md">
+      <div class="custom-control custom-switch">
+         <input type="checkbox" class="custom-control-input" id="customSwitch1">
+         <label class="custom-control-label" for="customSwitch1">Bloquear la puerta</label>
+      </div>
+      <br>
+      <br>
+      <button type="button" id="panicButton" class="btn btn-danger">¡Pánico!</button>
+      <br>
+      <br>
+      <button type="button" id="logOut" class="btn btn-danger">Log Out</button>
+    </div>
+    </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<body>
+  <script src="./assets/scripts/profile.js" type="module"></script>
+<html>
